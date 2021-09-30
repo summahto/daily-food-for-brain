@@ -1,0 +1,15 @@
+package com.array.test;
+
+public class ArrayTest {
+
+	public static void main(String[] args) {
+		
+		
+		int [] original = new int [] {8,3,4,1,8,9,3,7,7,4} ;
+		
+		for(int i=0; i<original.length ;i++) {
+			System.out.println(original[i]);
+		}
+	}
+
+}

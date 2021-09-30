@@ -1,0 +1,11 @@
+package com.array.test;
+
+public class ArrayTest {
+
+	public static void main(String[] args) {
+		
+		
+		int [] original = new int[10];
+	}
+
+}

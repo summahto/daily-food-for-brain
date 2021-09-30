@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="lib" path="C:/Essence_5.5.7/MQ_Jars/mysql-connector-java-8.0.25.jar" sourcepath="C:/Users/summahto/AppData/Local/Temp/.org.sf.feeling.decompiler1625411295835/source/mysql-connector-java-8.0.25-sources-1625411379198.jar">
+		<attributes>
+			<attribute name="source_encoding" value="UTF-8"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/BF_AppJars"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/BF_HelperJars"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

@@ -1,0 +1,29 @@
+package com.dsa.algorithms;
+
+import java.util.Arrays;
+
+//find the minimum difference between 2 subsets of the given array
+public class MinimumSubsetSumDiff {
+
+	public static void main(String[] args) {
+		
+		int arr[] = {6, 2, 5, 4, 3, 7, 9, 8} ;
+		int n = arr.length, sum = 0;
+		
+		for(int i : arr) {
+			sum += i; //we are doing this to find the maximum sum of a subset, basically to find the range
+		}
+		Boolean t[][] = new Boolean[n+1][sum+1];
+		
+		
+ 		subsetSumPossible(arr, sum);
+		
+		
+	}
+
+	private static void subsetSumPossible(int[] arr, int sum) {
+		
+		
+	}
+
+}

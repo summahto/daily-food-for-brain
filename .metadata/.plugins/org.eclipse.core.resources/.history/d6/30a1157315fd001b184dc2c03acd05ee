@@ -1,0 +1,13 @@
+package com.dsa.algorithms;
+
+public class MinimumSubsetSumDiff {
+
+	public static void main(String[] args) {
+		
+		int arr[] = {6, 2, 5, 4, 3, 7, 9, 8} ;
+		int n = arr.length;
+		
+		
+	}
+
+}

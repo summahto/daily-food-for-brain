@@ -1,0 +1,20 @@
+package com.leetcode.questions;
+
+public class MatchStickToSquare {
+
+	public static void main(String[] args) {
+		
+		int arr [] = {4, 3, 4, 4, 2, 6, 1};
+		
+		Boolean isSquarePossible = makeSquare(arr);
+		
+	}
+
+	private static Boolean makeSquare(int[] matchSticks) {
+		
+		arrays
+		
+		return null;
+	}
+
+}

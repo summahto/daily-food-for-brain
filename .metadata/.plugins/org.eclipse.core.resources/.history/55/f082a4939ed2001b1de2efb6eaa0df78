@@ -1,0 +1,10 @@
+package com.leetcode.questions;
+
+public class MatchStickToSquare {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

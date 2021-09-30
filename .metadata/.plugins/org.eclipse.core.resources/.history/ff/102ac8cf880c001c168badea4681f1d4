@@ -1,0 +1,19 @@
+package com.test;
+
+import java.io.PrintWriter;
+import java.io.StringWriter;
+import java.util.regex.Pattern;
+
+public class Testing {
+
+	public static void main(String[] args) {
+		
+		int a = -5/2;
+		int r = -5%2;
+		System.out.println("quotient " + a + "remainder " + r);
+	}
+
+		
+	
+
+}

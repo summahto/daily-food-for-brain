@@ -1,0 +1,27 @@
+package com.leetcode.questions;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+public class MatchStickToSquare {
+
+	public static void main(String[] args) {
+		
+		int arr [] = {4, 3, 4, 4, 2, 6, 1};
+		
+		Boolean isSquarePossible = makeSquare(arr);
+		
+	}
+
+	private static Boolean makeSquare(int[] matchSticks) {
+		
+		ArrayList<Integer> list = (ArrayList)Arrays.asList(matchSticks);
+		
+		for(int[] i : list)
+		System.out.println();
+		
+		return null;
+	}
+
+}

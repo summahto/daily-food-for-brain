@@ -1,0 +1,15 @@
+package com.dsa.algorithms;
+
+
+//find the minimum difference between 2 subsets of the given array
+public class MinimumSubsetSumDiff {
+
+	public static void main(String[] args) {
+		
+		int arr[] = {6, 2, 5, 4, 3, 7, 9, 8} ;
+		int n = arr.length;
+		
+		
+	}
+
+}

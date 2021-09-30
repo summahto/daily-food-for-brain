@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans 
+    http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+    
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context-4.0.xsd">
+    
+    <context:component-scan base-package="com.sumit.SPringDemo"></context:component-scan>
+    <context:annotation-config/>
+    
+        
+	<!--<bean id= "vehicle" class="com.sumit.SpringDemo.Bike"></bean> -->
+	<bean id= "tyre" class = "com.sumit.SpringDemo.Tyre">
+		<!--  <property name="brand" value= "MRF"></property> -->
+	</bean>
+	
+	<bean id = "triangle" class="com.sumit.springapp.Triangle" name = "triangle-alias">
+		<property name="points" >
+		<list>
+			<ref bean = "zeroPoint"/>
+			<ref bean = "point1"/>
+			<ref bean = "point2"/>
+		</list>
+		
+		
+			<!-- <idref bean = "zeroPoint" /> should be used when referring a value like a property value or Constructor arg not reference of a bean--> 
+			
+		</property>
+	</bean>
+	
+	<bean id = "zeroPoint" class="com.sumit.springapp.Point">
+		<property name="x" value = "0"></property>
+		<property name="y" value = "0"></property>
+	</bean>
+	
+	<bean id = "point1" class="com.sumit.springapp.Point">
+				<property name="x" value = "-20"></property>
+				<property name="y" value = "0"></property>
+	</bean>
+		
+	<bean id = "point2" class="com.sumit.springapp.Point">
+				<property name="x" value = "20"></property>
+				<property name="y" value = "0"></property>
+	</bean>	
+	
+	<!--   <alias name="triangle" alias="triangle-alias"/>	-->
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+</beans>

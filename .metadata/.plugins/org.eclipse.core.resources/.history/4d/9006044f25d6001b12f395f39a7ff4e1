@@ -1,0 +1,12 @@
+package com.array.test;
+
+public class ArrayTest {
+
+	public static void main(String[] args) {
+		
+		
+		int [] original = {8,3,4,1,8,9,3,7,7,4} ;
+		
+	}
+
+}
