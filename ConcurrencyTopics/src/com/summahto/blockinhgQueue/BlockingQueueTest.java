@@ -1,3 +1,5 @@
+package com.summahto.blockinhgQueue;
+
 import java.util.concurrent.ArrayBlockingQueue;
 
 public class BlockingQueueTest {

@@ -13,7 +13,8 @@ public class PalindromeNumber {
 		
 		System.out.println(s);
 		if(y < 0)
-			sys
+			//TODO
+			
 		if(y == Integer.parseInt(s))
 			System.out.println("given number is a palindrom");
 		else

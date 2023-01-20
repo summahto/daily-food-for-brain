@@ -47,6 +47,10 @@ public class Student {
 	public String toString() {
 		return "Student [name=" + name + ", id=" + id + ", gender=" + gender + ", age=" + age + "]";
 	}
+
+	public static void main(String[] args) {
+		
+	}
 	
 	
 }

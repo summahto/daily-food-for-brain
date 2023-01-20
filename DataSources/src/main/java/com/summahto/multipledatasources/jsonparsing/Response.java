@@ -1,4 +1,4 @@
-package com.crio.jsonparsing;
+package com.summahto.multipledatasources.jsonparsing;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -18,5 +18,12 @@ public class Response {
 
     public void setCandles( Map<LocalDate, Candle> candles) {
         this.candles = candles;
+    }
+
+    @Override
+    public String toString() {
+        return "Response{" +
+                "candles=" + candles +
+                '}';
     }
 }

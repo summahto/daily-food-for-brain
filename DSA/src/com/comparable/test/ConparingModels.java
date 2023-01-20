@@ -1,7 +1,6 @@
 package com.comparable.test;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class ConparingModels {
 
@@ -46,7 +45,7 @@ public class ConparingModels {
 		
 		for(String modelShop1 : dellModels2000) {
 			
-			dellModels2020.c
+			
 		}
 		
 		

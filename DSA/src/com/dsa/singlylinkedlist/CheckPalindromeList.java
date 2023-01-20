@@ -1,7 +1,5 @@
 package com.dsa.singlylinkedlist;
 
-import java.util.List;
-
 import com.dsa.singlylinkedlist.SinglyLinkedList.Node;
 
 public class CheckPalindromeList {

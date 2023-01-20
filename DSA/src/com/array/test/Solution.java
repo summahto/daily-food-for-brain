@@ -1,5 +1,11 @@
 package com.array.test;
 
+import java.util.List;
+import java.util.Map;
+import java.util.TreeMap;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
 public class Solution {
 	
 	    public boolean isMonotonic(int[] nums) {
@@ -17,5 +23,7 @@ public class Solution {
 	        }
 	        
 	        return increasing || decreasing;
-	}
+
+		}
 }
+

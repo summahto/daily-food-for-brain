@@ -1,7 +1,5 @@
 package com.dsa.singlylinkedlist;
 
-import com.dsa.singlylinkedlist.SinglyLinkedList.Node;
-
 public class SinglyLinkedList {
 
 	Node head;

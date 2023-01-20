@@ -1,0 +1,1 @@
+print("Hello friends, I am inside a Javascript file");

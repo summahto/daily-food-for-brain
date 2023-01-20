@@ -1,9 +1,10 @@
-package com.sumahto.list.questions;
+package com.summahto.list.questions;
 
 import java.util.*;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
+//Remove Duplicates from an ArrayList
 public class RemoveDuplicates {
 
     public static void main(String[] args) {
@@ -15,12 +16,13 @@ public class RemoveDuplicates {
 
         System.out.println("initial List " + duplicateList);
 //        removeDuplicate(duplicateList);
-        Set<Integer> uniqueSet = duplicateList.stream().collect(Collectors.toSet());
+//        Set<Integer> uniqueSet = duplicateList.stream().collect(Collectors.toSet());
+//
+//        duplicateList.clear();
+//        duplicateList.addAll(uniqueSet);
+//        System.out.println(duplicateList);
 
-        duplicateList.clear();
-        duplicateList.addAll(uniqueSet);
-
-        System.out.println("list after removing duplicates : " + duplicateList);
+//        System.out.println("list after removing duplicates : " + duplicateList);
 
         List<Integer> unique = duplicateList.stream().distinct().collect(Collectors.toList());
         System.out.println("list after removing duplicates : " + unique);

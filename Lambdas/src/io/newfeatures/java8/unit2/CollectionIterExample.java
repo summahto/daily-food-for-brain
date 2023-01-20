@@ -11,11 +11,11 @@ public class CollectionIterExample {
 	public static void main(String[] args) {
 		
 		List <Person> people = Arrays.asList(
-				new Person("Charles", "Dickens", 60),
-				new Person("Lewis", "Carrol", 42),
-				new Person("Thomas", "Carlyle", 51),
-				new Person("Charlotte", "Bronte", 45),
-				new Person("Matthew", "Arnold", 39)
+				new Person("Charles", "Dickens", 60, 22),
+				new Person("Lewis", "Carrol", 42, 22),
+				new Person("Thomas", "Carlyle", 51, 33),
+				new Person("Charlotte", "Bronte", 45, 44),
+				new Person("Matthew", "Arnold", 39, 44)
 				);
 		
 		System.out.println("using for loop");

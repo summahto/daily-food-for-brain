@@ -26,8 +26,10 @@ public class TestListToMapJava8 {
         
         System.out.println("Result :" +result1 );
         
-        Map<String, Long> result2 = 
-        		list.stream().collect(Collectors.toMap(null, null, null, null))
+        List<Long> list2 = list.stream().map(h -> h.getWebsites()).sorted().toList();
+        System.out.println(list2);
+        
+        
 
 	}
 

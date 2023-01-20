@@ -4,9 +4,9 @@ public class Reversal {
 
 	public static void main(String[] args) {
 		
-		String str = "malayalam";
-		String revString = reverseUsingStrBuilder(str);
-		System.out.println(revString);
+		String str = "Sumit";
+//		String revString = reverseUsingStrBuilder(str);
+//		System.out.println(revString);
 		
 		System.out.println(reverseManually(str));
 		StringBuilder sb = new StringBuilder(str);
@@ -43,15 +43,16 @@ public class Reversal {
 		
 	}
 	
+	//Sumit
 	public static String reverseManually(String str) {
 		
 		StringBuilder sb = new StringBuilder();
-		for(int i= str.length()-1; i>=0; i--) {
+		for(int i = str.length()-1 ; i >=0 ; i-- ) {
 			sb.append(str.charAt(i));
+//			System.out.println(sb.toString());
 		}
 		
 		return sb.toString();
-		
 		
 	}
 

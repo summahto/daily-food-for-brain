@@ -1,7 +1,8 @@
 package com.string.manipulation;
 
 import java.util.Arrays;
-import java.util.Iterator;
+import java.util.HashMap;
+import java.util.Map;
 
 public class AnagramTest {
 
@@ -11,11 +12,12 @@ public class AnagramTest {
 	public static void main(String[] args) {
 		
 		String s1 = "below";
-		String s2 = "sdsff";
-		int a = 'A';
+		String s2 = "wobelo";
+		int a = 'a';
 		
 		System.out.println(a);
-//		System.out.println(isAnagram(s1,s2));
+		System.out.println(isAnagramByHashMap(s1,s2));
+
 	}
 
 	private static boolean isAnagram(String s, String t) {
@@ -42,6 +44,41 @@ public class AnagramTest {
 		
 		return true;
 		
+	}
+
+
+	public static boolean isAnagramBySorting(String s, String t){
+		char [] sArray = s.toCharArray();
+		char [] tArray = t.toCharArray();
+
+		Arrays.sort(sArray);
+		Arrays.sort(tArray);
+
+		if(Arrays.compare(sArray, tArray) == 0)
+			return true;
+		else
+			return false;
+
+
+	}
+
+	public static boolean isAnagramByHashMap(String s, String t){
+		if(s.length() != t.length())
+			return false;
+
+		Map<Character, Integer> countMap = new HashMap<>();
+
+		for(int i =0; i< s.length(); i++){
+			countMap.put(s.charAt(i), countMap.getOrDefault(s.charAt(i), 0) +1);
+			countMap.put(t.charAt(i), countMap.getOrDefault(t.charAt(i), 0) -1);
+		}
+
+		for (char key : countMap.keySet()){
+			if(countMap.get(key) != 0)
+				return false;
+		}
+
+		return true;
 	}
 
 }

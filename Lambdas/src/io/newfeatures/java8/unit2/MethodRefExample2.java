@@ -14,12 +14,12 @@ public class MethodRefExample2 {
 		
 		
 		List <Person> people = new ArrayList<Person>();
-		
-		people.add(new Person("Charles", "Dickens", 60));
-		people.add(new Person("Lewis", "Carrol", 42));
-		people.add(new Person("Thomas", "Carlyle", 51));
-		people.add(new Person("Charlotte", "Bronte", 45));
-		people.add(new Person("Matthew", "Arnold", 39));
+
+		people.add(new Person("Charles", "Dickens", 60, 100));
+		people.add(new Person("Lewis", "Carrol", 42, 10));
+		people.add(new Person("Thomas", "Carlyle", 51, 29));
+		people.add(new Person("Charlotte", "Bronte", 45, 393));
+		people.add(new Person("Matthew", "Arnold", 39, 373));
 		
 		
 		performConditionally(people, p -> true, System.out::println); //p -> method(p)

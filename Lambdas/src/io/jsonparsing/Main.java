@@ -1,9 +1,13 @@
-package io;
+package io.jsonparsing;
+
+import java.io.File;
 
 public class Main {
 
     public static void main(String args[]) {
-        String json = ""
+        File file = new File("trades.json");
+
+
 
     }
 

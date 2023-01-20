@@ -1,4 +1,4 @@
-package com.sumahto.list.questions;
+package com.summahto.list.questions;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -22,25 +22,25 @@ public abstract class FindDuplicateInArray {
             if(!countMap.containsKey(i)) {
                 countMap.put(i, 1);
             }else{
-                countMap.put(i, countMap.get(i) +1);
+                    countMap.put(i, countMap.get(i) +1);
             }
         }
 
-//        Stream.of(a); //TODO : parse the array in using streams and put it into a map
 
 //        System.out.println(countMap);
 
 
-        for(Map.Entry<Integer, Integer> entry : countMap.entrySet()){
-            if(entry.getValue() >= 2){
-                System.out.println("Duplicate element found : " + entry.getKey() + " repeated " + entry.getValue() + " times");
-            }
-        }
+//        for(Map.Entry<Integer, Integer> entry : countMap.entrySet()){
+//            if(entry.getValue() >= 2){
+//                System.out.println("Duplicate element found : " + entry.getKey() + " repeated " + entry.getValue() + " times");
+//            }
+//        }
 
-//        countMap.entrySet().stream()
-//                .filter(e -> e.getValue() >= 2)
-//                .forEach(e ->System.out.println("Duplicate element found : " + e.getKey() + " repeated " + e.getValue() + " times"));
+        countMap.entrySet().stream()
+                .filter(e -> e.getValue() >= 2)
+                .forEach(e ->System.out.println("Duplicate element found : " + e.getKey() + " repeated " + e.getValue() + " times"));
 
+//        Stream.of(a); //TODO : parse the array in using streams and put it into a map
     }
 
 }

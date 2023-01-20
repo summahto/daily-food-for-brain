@@ -1,10 +1,10 @@
 package com.test;
 
-import java.util.ArrayList;
+
 import java.util.List;
 
-import edu.emory.mathcs.backport.java.util.Arrays;
-import edu.emory.mathcs.backport.java.util.Collections;
+import java.util.Collections;
+import java.util.Arrays;
 
 public class MaximizeFinalEle {
 
@@ -14,7 +14,7 @@ public class MaximizeFinalEle {
 		int n = 4;
 	    Integer arr[] = { 3, 1, 3, 4 };
 	   
-	    List list = Arrays.asList(arr);
+	    List<Integer> list = Arrays.asList(arr);
 	    int max = maximizeFinalElement(list, n);
 	    System.out.print(max);
 		

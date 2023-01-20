@@ -1,10 +1,10 @@
-package com.trapedza.bankfusion.bo.refimpl;
+package com.test;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
 
-public interface IBOUBVW_SODETAILS extends
-		com.trapedza.bankfusion.core.SimplePersistentObject {
+public interface IBOUBVW_SODETAILS {
+	
 	public static final String BONAME = "UBVW_SODETAILS";
 	public static final String UBFIRSTPAYMENTAMT = "f_UBFIRSTPAYMENTAMT";
 	public static final String UBNUMBEROFPAYMENTSFAILED = "f_UBNUMBEROFPAYMENTSFAILED";

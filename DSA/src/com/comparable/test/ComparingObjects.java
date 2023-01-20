@@ -1,7 +1,6 @@
 package com.comparable.test;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
@@ -36,12 +35,18 @@ public class ComparingObjects {
 			}
 		};
 		
-		Collections.sort(laptopList);
-		Collections.sort(laptopList, comp);
+//		Collections.sort(laptopList);
+//		Collections.sort(laptopList, comp);
 		
-		for(Laptop laptop : laptopList) {
-			System.out.println(laptop);
-		}
+		//passing comparator to the sorted method
+		laptopList.stream().
+				sorted((l1, l2) -> Integer.compare(l1.getPrice(), l2.getPrice())).
+				forEach(System.out::println);
+		
+//		
+//		for(Laptop laptop : laptopList) {
+//			System.out.println(laptop);
+//		}
 		
 	}
 }

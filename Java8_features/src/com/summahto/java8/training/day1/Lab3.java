@@ -1,4 +1,4 @@
-package com.summahto.java8.training;
+package com.summahto.java8.training.day1;
 
 import java.util.ArrayList;
 import java.util.List;
