@@ -1,2 +1,2 @@
 # daily-food-for-brain
-# this is what I do everyday to keep my brain healthy
+This is my playground, where I test various frameworks, languages, ideas, and let my thoughts flow through code with no restricstions.
