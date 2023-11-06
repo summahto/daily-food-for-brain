@@ -1,13 +1,18 @@
 package com.main.java;
 
-import com.dsa.tree.BinaryTree;
+
+import java.util.*;
 
 public class DataStructures {
 
 	public static void main(String[] args) {
-		
-		BinaryTree tree = new BinaryTree();
-		
+
+		char ch = 'a';
+
+		if(ch == 'a'){
+			System.out.println("great");
+		} else
+			System.out.println("not so great");
 
 	}
 
