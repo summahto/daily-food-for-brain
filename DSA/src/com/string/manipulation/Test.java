@@ -5,16 +5,38 @@ import java.util.*;
 public class Test {
 	
 	public static void main(String[] args) {
-		String s = "AABBBC";
-		int k = 2;
 
-//		System.out.println(characterReplacement(s,k));
+		Map<Integer, List<Integer>> rowMap = new HashMap<>();
+		int arr [][] =  {
+				{1, 2, 3},
+				{4, 5},
+				{6, 7, 8, 9},
+				{10},
+				{11, 12, 13}
+		};
 
-		for (int i=0; i<128; i++){
-			System.out.println(i + " -> " + (char)(i));
+		int i = 0;
+		boolean found = true;
+		while(found) {
+			found = false;
+			for (int j = 0; j < arr.length; j++) {
+				if (arr[j].length - 1 >= i) {
+					System.out.println(arr[j][i]);
+					found = true;
+				}
+			}
+			i++;
 		}
 
 
+		for (int column = 0; column < arr[0].length; column++) {
+			for (int row = 0; row < arr.length; row++) {
+				System.out.print(arr[row][column]);
+			}
+		}
+
+		// Print the map to verify
+//		System.out.println(rowMap);
 
 	}
 
