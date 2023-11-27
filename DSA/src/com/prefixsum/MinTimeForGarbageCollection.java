@@ -39,6 +39,7 @@ public class MinTimeForGarbageCollection {
         int gc=0, pc = 0, mc =0, g =0, p = 0, m= 0;
 
         // Map<Character, List<Pair<Integer, Integer>>> gMap = new HashMap<>();
+        // Using a Map would be better in case there are different types of garbage
         //Pre-calculating prefix sum of distances for trucks in advance, since every truck has to go through all houses, in case there is garbage in nth truck
         for(int j =1 ; j< travel.length; j++){
             travel[j] += travel[j-1];
