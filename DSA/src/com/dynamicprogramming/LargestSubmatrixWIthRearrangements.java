@@ -18,15 +18,15 @@ public class LargestSubmatrixWIthRearrangements {
     public static void main(String[] args) {
 
         int [] [] matrix = {{1,0,1,0,0},{1,0,1,1,1},{1,1,1,1,1},{1,0,0,1,0}};
-        int area = 0, maxSoFar = 0;
+        int maxSoFar = 0;
         int m = matrix.length;
         int n = matrix[0].length;
         int [] heights = matrix[0];
 
-        for(int i= 0; i< matrix.length; i++){
+        for(int i= 0; i< m; i++){
             if(i > 0){
 
-                for(int j = 0; j< matrix[i].length; j++){
+                for(int j = 0; j< n; j++){
 
                     if(matrix[i][j] == 1)
                         heights[j] += matrix[i][j];
