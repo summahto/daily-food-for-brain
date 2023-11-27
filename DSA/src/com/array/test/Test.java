@@ -1,32 +1,48 @@
 package com.array.test;
 
+import java.util.*;
+
 public class Test {
 
     public static void main(String[] args) {
-        Integer a ;
-        Integer b ;
-        a = Integer.valueOf(127);
-        b = a;
 
-        System.out.println( b== a);
+        int maxSize = 5; // Set the maximum size
 
-        a++;
+        LinkedHashSet<Integer> linkedHashSet = new LinkedHashSet<>();
 
-        System.out.println(b==a);
+        // Add elements to the set
+        linkedHashSet.add(1);
+        linkedHashSet.add(2);
+        linkedHashSet.add(3);
+        linkedHashSet.add(4);
+        linkedHashSet.add(5);
+        linkedHashSet.add(6);
+        linkedHashSet.add(7);
 
-        a--;
-        System.out.println(b==a);
-        System.out.println("a =" + System.identityHashCode(a));
-        System.out.println("b =" + System.identityHashCode(b));
+        // Check if the set exceeds the maximum size
+        while (linkedHashSet.size() > maxSize) {
+            // Iterate over the set and remove the first element
+            Iterator<Integer> iterator = linkedHashSet.iterator();
+            if (iterator.hasNext()) {
+                Integer oldestElement = iterator.next();
+                iterator.remove();
+                System.out.println("Removed oldest element: " + oldestElement);
+            }
+        }
 
-        b = 200;
-        a = Math.max(10, 200);
-
-        System.out.println(a == b);
-
-        System.out.println("a =" + System.identityHashCode(a));
-        System.out.println("b =" + System.identityHashCode(b));
+        // Print the updated set
+        System.out.println("Updated set: " + linkedHashSet);
+    }
 
 
+}
+
+class Pair {
+    char key;
+    int value;
+
+    public Pair(char key, int value) {
+        this.key = key;
+        this.value = value;
     }
 }
